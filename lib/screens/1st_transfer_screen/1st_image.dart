@@ -15,23 +15,21 @@ class Transfer extends StatelessWidget {
         backgroundColor: Colors.white,
        leading: Padding(
          padding: const EdgeInsets.all(8.0),
-         child: CircleAvatar(radius: 17,backgroundColor: Colors.grey[300],
-           child: CircleAvatar(radius: 14,backgroundColor: Colors.white,
-               child:Padding(
-                 padding: const EdgeInsets.only(left: 8.0),
-                 child: Icon(Icons.arrow_back_ios,color: Colors.black45,),
-               )),
+         child:CircleAvatar(radius: 17,
+           child: FloatingActionButton(onPressed: (){},backgroundColor: Colors.white,
+               mini: true,shape: CircleBorder(side: BorderSide(color: Colors.grey)),
+               child:Icon(Icons.arrow_back_ios_new_sharp,color: Colors.black54,)),
          ),
-       ) ,
+       ),
        leadingWidth: 50,
        title: Text( 'Transfer Request',style: TextStyle(fontSize: 20,color: Colors.black,) ),
         centerTitle: true,
         actions:[
           Padding(
             padding: const EdgeInsets.all(8.0),
-            child: CircleAvatar(radius: 17,backgroundColor: Colors.grey[300],
-              child: CircleAvatar(radius: 14,backgroundColor: Colors.white,
-
+            child: CircleAvatar(radius: 17,
+              child: FloatingActionButton(onPressed: (){},backgroundColor: Colors.white,
+                  mini: true,shape: CircleBorder(side: BorderSide(color: Colors.grey)),
                   child:Icon(Icons.search_outlined,color: Colors.black54,)),
             ),
           ) ,
