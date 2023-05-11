@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'data_class.dart';
 
 class Transfer extends StatelessWidget {
-// test
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
