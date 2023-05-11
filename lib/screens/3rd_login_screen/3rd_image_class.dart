@@ -11,8 +11,7 @@ Widget otherSign(Imagelogo logo)=>  Container(
     color: Color(0xffebebee),
     boxShadow: [BoxShadow(
       color: Colors.grey.withOpacity(0.7),
-      blurRadius: 9,
-      offset: Offset(0, 3),),
+      blurRadius: 9,),
     ],
   ),
   child:

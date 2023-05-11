@@ -31,6 +31,7 @@ class Login extends StatelessWidget {
                       children: [
                         Text(' E-mail Adress',style: TextStyle(color: Colors.grey,fontSize: 12)),
                       ],),
+                    // E-mail TextFormField
                     TextFormField(
                       decoration: InputDecoration(border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10)
@@ -46,6 +47,7 @@ class Login extends StatelessWidget {
                         TextButton(onPressed: (){},
                             child: Text('forget password?',style: TextStyle(color: Colors.grey,fontWeight:FontWeight.bold,fontSize:12,decoration: TextDecoration.underline),))
                     ],),
+                    // password TextFormField
                     TextFormField(
                       decoration: InputDecoration(border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10)
@@ -58,6 +60,8 @@ class Login extends StatelessWidget {
                       Checkbox(value: true, onChanged: (bool? value){},),
                       Text('Remember me'),
                     ],),
+
+                    // the divider between TextFormFields and other signIn
                     Row(mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                       Expanded(child: Divider(color: Colors.blueGrey[300],thickness: 0.6 ,height: 10)),
@@ -74,8 +78,11 @@ class Login extends StatelessWidget {
                         otherSign(Imagelogo('images/facebook.png') ),
                          ],),
                          SizedBox(height: 40,),
+
+                         // login button
                          Container(
-                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(7),color: Colors.black,),
+                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(7),
+                            color: Colors.black,),
                          width: 280,height: 30,
                           child: MaterialButton(onPressed: (){},
                             child:Row(mainAxisAlignment: MainAxisAlignment.center,
@@ -84,6 +91,8 @@ class Login extends StatelessWidget {
                               Icon(Icons.arrow_forward_outlined,color: Colors.white,size: 15,)
                         ],)
                         ),),
+
+                    // text to signup if no account
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                         children: [
